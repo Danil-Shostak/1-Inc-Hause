@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink. House</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/cortStyle.css">
+    <link rel="stylesheet" href="/modalWin.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="/res/Star 1.png" alt="Logo">
+                    <span class="header-logo-text">Ink. House</span>
+                </a>
+            </div>
+                <p class="header-userName">
+                    Danila
+                </p>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Репродукции</a>
+                <a href="#" class="nav-link">Новинки</a>
+                <a href="#" class="nav-link">О нас</a>
+                <a href="/cart.html" class="cart-link">
+                    <img src="/res/korzina.svg" alt="Корзина">
+                </a>
+                <a href="" class="LogOut-link">
+                    <img src="/res/LogOut.png" alt="LogOut">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <article class="content">
+        <div class="main">
+            <div class="main-image">
+                <img src="/res/beart.png" class="main-image-img" alt="">
+            </div>
+            <div class="main-text">
+                <h1 class="main-text-Headlines">
+                    <span class="part1">Реплики картин от</span>
+                    <span class="part2">Ink. House</span>
+                </h1>
+                <p class="main-text-txt">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                <a href="" class="main-text-button">Продукция</a>
+            </div>
+        </div>
+    </article>
+    <div class="catalog">
+        <div class="catalog-head">
+            <p class="catalog-head-name">Репродукции</p>
+            <div class="catalog-head-navigation">
+                <a href="" class="catalog-navigation-link">Франция</a>
+                <a href="" class="catalog-navigation-link">Германия</a>
+                <a href="" class="catalog-navigation-link">Англия</a>
+            </div>
+        </div>
+        <div class="catalog-items">
+            <!-- Товары с добавленными классами для обработки кликов -->
+            <div class="catalog-items-item">
+                <img src="/res/pichure1.jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Марсел Руссо</p>
+                <p class="catalog-item-name">Охота Амура</p>
+                <p class="catalog-item-info">Холст маслом (50x80)</p>
+                <p class="catalog-item-price">14500 руб</p>
+                <div class="catalog-item-button" data-product="Охота Амура" data-price="14500">В корзину</div>
+            </div>
+
+            <div class="catalog-items-item">
+                <img src="/res/pichure2.jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Андри селен</p>
+                <p class="catalog-item-name">Дама с собачкой</p>
+                <p class="catalog-item-info">Акрил бумага (50x80)</p>
+                <p class="catalog-item-price">16500 руб</p>
+                <div class="catalog-item-button" data-product="Дама с собачкой" data-price="16500">В корзину</div>
+            </div>
+
+            <div class="catalog-items-item">
+                <img src="/res/03.jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Франсуа Дюпон</p>
+                <p class="catalog-item-name">Процедура</p>
+                <p class="catalog-item-info">Цветная литография (40x60)</p>
+                <p class="catalog-item-price">20000 руб</p>
+                <div class="catalog-item-button" data-product="Процедура" data-price="20000">В корзину</div>
+            </div>
+
+            <div class="catalog-items-item">
+                <img src="/res/03 (1).jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Луа Детуш</p>
+                <p class="catalog-item-name">Роза</p>
+                <p class="catalog-item-info">Бумага акрил (50x80)</p>
+                <p class="catalog-item-price">12000 руб</p>
+                <div class="catalog-item-button" data-product="Роза" data-price="12000">В корзину</div>
+            </div>
+
+            <div class="catalog-items-item">
+                <img src="/res/03 (2).jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Франсуа Дюпон</p>
+                <p class="catalog-item-name">Птичья трапеза</p>
+                <p class="catalog-item-info">Цветная литография (40x60)</p>
+                <p class="catalog-item-price">22500 руб</p>
+                <div class="catalog-item-button" data-product="Птичья трапеза" data-price="22500">В корзину</div>
+            </div>
+
+            <div class="catalog-items-item">
+                <img src="/res/03 (3).jpg" class="catalog-item-img" alt="">
+                <p class="catalog-item-author">Пьер Моранж</p>
+                <p class="catalog-item-name">Пейзаж с рыбой</p>
+                <p class="catalog-item-info">Цветная литография (40x60)</p>
+                <p class="catalog-item-price">20000 руб</p>
+                <div class="catalog-item-button" data-product="Пейзаж с рыбой" data-price="20000">В корзину</div>
+            </div>
+        </div>
+    </div>
+   <div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <!-- Форма регистрации -->
+        <div id="registerForm" class="form-container active">
+            <h2 class="modal-title">Регистрация</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                <div class="form-footer">
+                    Уже есть аккаунт? <a href="#" class="switch-form" data-target="login">Войти</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Форма входа -->
+        <div id="loginForm" class="form-container">
+            <h2 class="modal-title">Вход</h2>
+            <form id="loginFormElement">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Войти</button>
+                <div class="form-footer">
+                    Нет аккаунта? <a href="#" class="switch-form" data-target="register">Зарегистрироваться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="collection">
+        <img src="/res/Back.png" class="collection-back" alt="">
+        <div class="collection-content">
+            <h1 class="collection-content-headlers">
+                Новая коллекция французских авторов
+            </h1>
+            <p class="collection-content-txt">
+                Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. 
+                Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+            </p>
+            <div class="collection-content-button">
+                <a href="" class="collection-button-link">Ознакомиться</a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <img src="/res/Abaout.png" class="about-image" alt="">
+        <div class="about-text">
+            <h1 class="about-text-hedler">Наша команда</h1>
+            <p class="about-text-cintent">
+                Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
+            </p>
+            <div class="about-humans">
+                <img src="/res/human1.png" class="about-humans" alt="">
+                <img src="/res/human2.png" class="about-humans" alt="">
+                <img src="/res/human3.jpg" class="about-humans" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <a href="#">
+                <img src="/res/Star 1.png" alt="Logo">
+                <span class="header-logo-text">Ink. House</span>
+            </a>
+        </div>
+        <nav class="footer-navigation">
+            <div class="footer-navigation-repo">
+                <h1 class="footer-repo-headlers">
+                    Репродукции
+                </h1>
+                <div class="footer-repo-links">
+                    <a href="" class="footer-links">Франция</a>
+                    <a href="" class="footer-links">Германия</a>
+                    <a href="" class="footer-links">Англия</a>
+                </div>
+            </div> 
+            <div class="footer-news">
+                <h1 class="footer-news-headlers">
+                    Новинки
+                </h1>
+                <div class="footer-news-links">
+                    <a href="" class="footer-links">2021</a>
+                    <a href="" class="footer-links">2022</a>
+                </div>
+            </div>
+            <div class="footer-about">
+                <h1 class="footer-about-headlers">
+                    О нас
+                </h1>
+                <div class="footer-obut-links">
+                    <a href="" class="footer-links">Художники</a>
+                    <a href="" class="footer-links">Менеджеры</a>
+                </div>
+            </div>
+            <div class="footer-media">
+                <img src="/res/fc.svg" class="footer-media-fc" alt="">
+                <img src="/res/inst.svg" class="footer-media-inst" alt="">
+                <img src="/res/yt.svg" class="footer-media-yt" alt="">
+            </div>
+        </nav>
+    </footer>
+    <script src="/modalWin.js"></script>
+</body>
+</html>
